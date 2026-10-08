@@ -17,7 +17,7 @@ func main() {
 }
 
 func wordAbbr(s string) string {
-	if len(s) < 10 {
+	if len(s) <= 10 {
 		return s
 	}
 	return string(s[0]) + fmt.Sprint(len(s)-2) + string(s[len(s)-1])
